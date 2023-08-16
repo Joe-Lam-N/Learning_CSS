@@ -1,0 +1,518 @@
+Author block:
+	" I am now learning how to do CSS. I just finished HTML and moving on. I was thinking about what jobs I would want and the first that comes to mind is full stack develeoper. I do think that, but I think there is to much to learn to become one. So, I am going to aim for front-end developer first, after a while, then I'll get my hands into back-end stuff. Like on the first learner, I am now also following a video by Dave Gray. I love his teaching style, he does go slow a bit, but he is very thorough with his information. Also, my notes format will be the same, I will have the code I'm working on (on another .txt), then I will explain the code and after that , I'll put any final notes I would want to say in general"
+
+Goals:
+	"My goal for HTML was to build a Wiki of some sort. So, I think I am going to contiune down that path finshing CSS and moving on to javascript. I would also like to finsh this tutorial in less than 10 days."
+
+Recorded dates
+	" Start 6/4/2023
+
+Video Resoruce:
+	"https://www.youtube.com/watch?v=OXGznpKZ_sA&t=573s&ab_channel=freeCodeCamp.org"
+
+Chapter 1 Start -------------
+
+Chapter 1 Code Explanation:
+	- << p{} >>
+		- Picking which element to change
+		- Called a selector
+		- << font-size: >>
+			- Select of font size
+			- Called a property
+			- << 64px; >>
+				- Setting the property to 64px
+				- Called a property value
+			- << color: >>
+				- selector
+				- << purple; >>
+					- property value
+
+Chapter 1 Notes:
+	- CSS is a language of stylesheet. Meaning it is used to design other programming langaue
+		 - HTML is the building	while CSS is the paint the hardwood floors and stuff.
+	- This chapter is about the basic syntax of CSS
+		- CSS Code will be overwirtten to whichever code comes right before the action
+			- If we import a stylesheet at the beginging and after use a style element, the style element will override the stylesheet. It also means the style element would be overwritten by the style attrubute.
+			- CSS declaration also ends in ; as an endding syntax
+	- CSS Ruleset
+		- consist of selector, property, and property vaule
+			- The property and property value is consider a declaration
+	- Like HTML, CSS also does not have error codes. We have to go to a CSS valadation website to check our code
+		- https://jigsaw.w3.org/css-validator/
+Chapter 1 END ---------------
+
+Chapter 2 Start:
+
+Chapter 2 Code Explnation:
+	- Selectors
+		- << * >>
+			-Global selector
+		- << html >>
+		- << main >>
+		- << body >>
+		- << button >>
+		- << h1,h2 >>
+			- Element selector
+		- << p >> 
+		- << p span >>
+			- Inline element selector
+			- You should use a class element instead of this incase you need the inline element for something else
+		- << .[class] >> 
+			- Class selector
+				- <p class="[class]">  </p>
+		- << #[id] >>
+			- Id selector
+			- Try to aviod
+	- Properties
+		- font-family
+		- font-size
+		- font:
+			- properties vault: inherit
+			- Use cases of forms
+		- color
+		- text-transfrom
+		- background-color
+		- font-style
+Chapter 2 notes
+	- This chapter is about selectors
+		- Global selectors are not inherent
+			- They select all elements to be forced
+			- Try to aviod
+		- id selector
+			- Not good pratice to use id selector in CSS
+	- You can group selectors with a , in between them.
+		- If there is no comma, then the program is looking for [secondValue] inside [firstVaule].
+	-CSS works from the top down
+		- If a code is written before it, the code after has priorty
+		- However, there is a order of president
+			- Element -> Class -> ID
+			- Where ID is the strongest
+				- Can be used to help which one has priorty
+					-https://specificity.keegan.st/
+		- Inherent
+			- Where anything below another selector while being about the same rule, the rule will inherent some of the upper selector if not overwritten by another in the lower class.
+				- Forms elements can not be inherited
+					- IE
+					- button
+					- input
+					- textare
+					- select
+					- You can however tell it to inherited those properties
+				- Borders are not inherited
+				- Most fonts type elements will be inheriented
+		- You can also put an !important after a declaration to cancel all other declaration about the rule
+			- Do not Use
+			- It is useally used when your code is baddly written
+
+chapter 2 END -----
+
+Chapter 3 Start ----
+
+Chapter 3 Code Explanation
+	- background-color
+		- Pick background color
+		- Can also be shorten to background
+	- color
+		- Pick font color
+
+Chapter 3 Notes:
+	- This chapter is about colors
+		- There are 5 classes of colors in CSS
+			- named
+				- Where you can just call the name of the color
+					- Blue
+					- Red 
+					- Green
+					- Lightblue
+			- rgb
+				- Color classfication with additive red, green and blue colors.
+				- Using the format of ( 0, 0, 0)
+					- Where each number corraspond to red, green and blue.
+					- Each goes up to 255
+
+			- rgba
+				- Same thing as rgb but with alpha
+					- Alpha is how opaque the color are
+						- Has a value of 0 to 1
+							- Where 0 is tranparent
+			- hexdecmail
+				- Works like rgb but with hexdecmail coding
+					- There is a hastag followed by 6 number/charateres
+						- These 6 charateres group up in pairs to form Red, Green, Blue
+						- The charateres are 0 to 9 and A to F 
+							- Where 0 is the least of the color value and F is the most of the corrasponding color
+				- If the pairs match up, you can shorten them
+					- Example:
+						- #FF0022
+						 	- Can be shorten to 
+									- #F02
+			- hsl
+				- Stands for hue, saturation and lightness. 
+					- Also has 3 value 
+						- (0,0%,50%)
+					- The first value is the hue
+						- Goes from 0 to 360
+							- Repersenting the Color wheel
+					- Second value is the percentage of saturation
+						- Goes from 0% to 100%
+							- Where 100% would repersent the full color
+							- And 0% would be Gray
+					- Third value is the lightness
+						- How bight is the color
+							- Goes from 0% to 100%
+								- Where 100 is white
+								- And 0 is black
+			-hsla
+				- Same as hsl but with alpha
+				- See rgba for explanation
+	Color thory
+		- https://coolors.co/
+			- Will create color paletes
+			- They also have a feature to help with contrast
+				- Make sure you have a good contrast to help the reader able to see your website
+Chapter 3 END -----
+
+Chater 4 Start -----
+
+
+Chapter 4 Code Explanation:
+
+	- px 
+		- Pixel
+		- Most common unit
+		- Abslote size
+		- Uses
+			- Borders
+	- rem
+		- root element
+		- Typicaly used for font size
+		- Will be relative to the root element
+			- When the browser changes it's zoom size, this will change with it.
+			- A mutiplier.
+			- WILL NOT BE RELATIVE TO THE PARENT 
+	- em 
+		- Element
+		- Typicaly used for anything that connects with fontsizes 
+			- ie.
+				- Borders	
+				- Padding
+		- Will be relative to the font size
+	- %
+		- Perecentages
+		- Relative to another qunaity
+			- Will look at the parent size and set it relative to that with the perecentage.
+	- vw/vh
+		- Viewport wdith/Height
+		- Relative to what we see.
+		- Uses of body element
+			- You need the body element to cover everything you see.
+
+Chapter 4 Notes:
+	- This chapter is about Units and Sizes
+		- There are many Units in CSS but we only care about a few. 
+		- We usally don't want to use abslote unit to make our page
+			-This is because we take away the user's ability to change the text sizes within their own browser.
+		- Chrome DevTools will help with this.
+			- Inspect, into style.
+			- It will show all the size by default and what we have put in.
+		- For more sizes and Units
+			- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units
+
+
+Chapter 4 END ----
+
+Chapter 5 Start -----
+
+Chapter 5 Code Explanation:
+	CSS Reset
+		- Cancel out the default margins, padding and box-sizing of the browser
+			- Makes it as we code.
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		- The border-box is setting it so that the border and the padding will absorb any extra sizes the content box would add
+			- Makes it more perdictable of what will happen to the box
+	- margin
+		- control all margin to be equal
+		- margin:auto
+			- center left and right margin to be inside the parent's box
+		- margin-xxx
+			- xxx= side
+			- control each side of the margin
+	- border
+		- control all sides of the border
+		- border-xxx
+			- xxx=side
+			- control form of each border side
+		- border-xxx-style
+			- control border style
+		- border-xxx-color
+			- control border color
+		- border-xxx-size
+			- control border size
+		- border-radius
+			- Curve the edges of a border
+			- If you input half of the height and weight
+				- you can create a cicle box
+	- padding
+		-control padding of all sides
+		- padding-xxx
+			- xxx= side
+			- control padding size of each side
+	-outline
+		- the outline of the box 
+			- not included in the box sizing
+	-outline-offset
+		- You can go outside or inner of the outline 
+
+	- Short hand
+		- margin
+			- margin: 1.5em 2em 3em 4em;
+				- this if you want to control each indivualy
+			`		- top
+					- right
+					- bottom
+					- left
+			- margin: 1.5em 2em ;
+				- setting top and bottom to 1.5
+				- setting right and leftt to 2
+			- margin: 1.5em 2em 3em;
+				- setting top to 1.5
+				- setting left and right to 2
+				- setting bottom to 3
+			- margin: 1.5
+				- settting all sides
+		- border
+			- border: 5px solid red;
+				- set size
+				- set style
+					- required
+				- set color
+		- padding
+			- padding: 1.5em 2em 3em 4em;
+				- this if you want to control each indivualy
+					- top
+					- right
+					- bottom
+					- left
+			- padding: 1.5em 2em ;
+				- setting top and bottom to 1.5
+				- setting right and leftt to 2
+			- padding: 1.5em 2em 3em;
+				- setting top to 1.5
+				- setting left and right to 2
+				- setting bottom to 3
+			- padding: 1.5
+				- setting all sides
+
+	
+
+Chapter 5 Notes:
+	- This chapter is about box models
+		- Everything inside HTML is a box
+		- A box consist of
+			- content
+			- padding
+			- border
+			- margin
+			- from inside to outside
+Chapter 5 END -----
+
+Chapter 6 Start:
+
+Chapter 6 Code Explanation:
+	- <text_decoration: none>
+		- Will default all text decoration
+			- Useful for links where they are default underline
+	- <text-decoration: underline>
+		- Underline the text
+	- <text_decoration: overline>
+		- Draw a line over the text
+	- <text_decoration: line-through>
+		- Draw a line through the text
+	- <text_transform: captilized
+		- Will captilized the first charatere
+	- <text_decoration: lowercase>
+		- Will lowercase everything
+	- <text_decoration: uppercase>
+		- Will uppercase everything
+	- <text-align: left>
+		- Will align everything to the left
+		- Default
+	- text-align: justify>
+		- Both left and rigght are attemetd to be even
+	- text-align: right>
+		- Will align everything to the right
+	- <text-indent: (value)>
+		- Indent the text by the value inputed
+		- Recommened to use em
+	- <line-height: (value)> 
+		- Distance between each line
+	- <letter-spacing: (value)>
+		- Distance between each charatere
+	- <word-spacing: (value)>
+		- Distance between each word
+	- <font-weight: (value)>
+		- how bold the text is
+	- <font-style: (style)
+		- style
+			- italic
+			- oblique
+				- More italic
+			- normal
+	- <font-family: (fonts)>
+		- Fonts can be imported from outside of css
+			- To link a font, href inside html, then call it in css
+			- You can also import it by adding the @import at the top of the css
+		- When you put muliple, it will use the first one and when it can't find that one, it will use the next
+			- This is refer to as a font family
+Chapter 6 Notes:
+	- This chapter is about typography or text styling
+		- Forms do not default inherent style
+		- Refer to IDM to check for more settings on typography
+			- Online resoruces are always useful
+		- CSS websafe fonts
+			- Fonts that most computers will have
+			- https://www.cssfontstack.com/
+		- CSS font imports
+			- Download a diffrent font from online
+				- can slow down loading time on page
+			- https://fonts.google.com/
+Chapter 6 END --------
+
+
+Chapter 7 Start: 
+
+Chapter 7 Code Explanation:
+	- Selectors:
+		- Sudo Class
+			- a:visited
+				- When a link as been visited
+			- a:hover
+				- When the curser is over the link
+				- a:focus
+					- You can tab over to the link
+					- Makes webpage more assisable
+			- a:active
+				- When you are clicking the link
+	- Properties
+		- curser:(style)
+			- style
+				- not-alllowed
+					- Stop sign
+				- pointer
+					- Pointing finger
+				- none
+					- Deleate curser
+			- Change the cuser during the selector
+
+Chapter 7 Notes:
+	- This Chapter is about CSS links
+		- Also could been a part of typography with a focus on links
+		- Most stuff from typography can be used
+	- Sudo class is a class inside a class when a class can change during use
+	- Ordered matters, if you put hover over visted, the hover will not work when a link has been visted
+Chapter 7 END -----
+
+Chapter 8 Start:
+
+Chapter 8 Code Explanation:
+	- selectors
+		- ul
+		- ol
+		- li
+		- su
+		- Sudo class selector
+			- (List Selectors):nth-child()
+				- Use this to specifide a list item
+				- You can pass in a number refering to a item
+				- You can also pass in odd or even
+		- Sudo Elements Selectors
+			- ::marker
+				- Here you only select the point/number/buttenpoint of the list
+				- You have a properties of "content" which could change the buttenpoint to the text
+	- Properties
+		- list-style-type
+			- How should the bullen points look like
+				- square
+				- cicle
+				- numbered
+				- alpha
+		- list-style-image
+			- an image to use as the bullen point
+				- list-style-image: url(<image_location>);
+		- list-style-position
+			- How should the bullen points be position
+			- Some browser change this when you change the position of the text, others don't
+		- ShortHand
+			- list-style: (type) (image) (position)
+	- HTML
+		- Attrubutes
+			- <ol> </ol>
+				- start-""
+					- You can start the list at a specific number
+						- Even if you use alpha, start still needs to be a number.
+				- reversed
+					- It will count down
+			- <li></li>
+				- value=""
+					- Will skip to that value
+Chapter 8 Notes:
+	- This chapter is about CSS List
+		- Also ould have been a part of typography with a focus on lightness
+		- Most stuff from typography can be used
+	- Sudo element selectors 
+		- Are ketword added to selectors to pick a specific part of the element
+		- Should start with ::
+Chapter 8 END ---------
+
+Chapter 9 Start:
+Chpater 9 Notes:
+	- This chapter was just a project to review everything we have learnt so far.
+Chapter 9 END ---------
+
+Chapter 10 Start:
+Chapter 10 Code Explanation:
+	- 	inline-elements
+		- <display:inline-block>
+			- Will make a inline element somewhat act like a block element
+Chapter 10 Notes:
+	- This chapter is about display
+		- Display is about block level element and inline level element
+		- Block level elements stack on top of eachother
+			- They are limited to their parent element (block)
+		- Inline element doesn't cause a line break
+			- They are only as big as their content
+			- Do not stack on top of eachother
+		- display:inline-block; will make a inline element act like a hybrid of a block element and inline
+			- It dosen't create a new line
+			- It lets some properties that wouldn't normaly work with a inline element to work
+		- When would this be Useful?
+			- When you are trying to turn an inline element into a button
+			- When using on a list, it will make the list right to left
+Chapter 10 END ------
+Chapter 11 Start:
+Chapter 11 Code Explanation:
+	- Selectors
+		- float:(side)
+			- Put inside a class, the object will be a float to the respective side
+		- displaly: flow-root;
+			- Fix the size of a container to a float
+				- overflow: auto;
+					- an old way of doing the same thing
+
+Chapter 11 Notes:
+	- This Chaptere is about floats
+		- Floats places an element to the left or right side of a it's container.
+			- It also allows text to warp around it
+			- When inside a container, a Float can overlap its container due to it ignoring the flow of the page
+				- inorder to fix this we need to fit the container to the float by applying a flow to the container
+Chapter 11 END -------
+
+
+Chapter 12 Start:
+Chapter 12 Code Explanation:
+
+Chapter 12 Notes:
