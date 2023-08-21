@@ -1,37 +1,52 @@
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 body{
     font-size: 1.5rem;
-    font-family: sans-serif;
+    font-family:sans-serif;
+    min-height: 200vh;
 }
 
-.columns{
-    /* column-count:5;
-    column-width: 250px; */
-    columns: 5 150px;
-    column-rule: 3px solid black;
-    column-gap: 3rem;
-}
-.columns p{
-    margin-top:0;
-}
-.columns h2{
-    margin-top:0;
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    break-inside: avoid;
+.outer-container{
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
 
 }
-.quote{
-    font-size: 3rem;
-    text-align: center;
-    color: #333;
-    column-span:all;
+
+.inner-container{
+    border: 2px solid #00f;
+    width:40vw;
+    height:50wh;
+    margin: 200px auto;
+
 }
-.columns .quote{
-    margin-top: 2rem;
+.box{
+    width:150px;
+    height:150px;
+    color : #fff;
+    padding: 1rem
 }
 
-.no-warp{
-    white-space:nowrap;
+.absolute{
+    background-color: blue;
+    position: absolute;
+    top:0px;
+    left:0px;
+
+}
+
+.relative{
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left:100px;
+}
+.fixed{
+    background-color: green;
+    position: fixed;
+    top:100px;
 }

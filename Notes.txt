@@ -514,5 +514,43 @@ Chapter 11 END -------
 
 Chapter 12 Start:
 Chapter 12 Code Explanation:
-
+	-Selectors
+		-columns-count
+			- How many columns do you want
+		-column-width
+			- What is the max size for these columns
+				- if max is hit, new column will be created to the meax of columns count
+			-ShortHand
+				- columns: (count)(wdith)
+					- shorthand for colum-count and column-width
+		- colum-rule
+			- column-rule: 2px solid #333;
+				- a line between each column
+				- same formate as borders
+		- column-gap
+			-column-gap:3rem;
+				- spacing bewteen each column.
+		- column-span
+			- used to let a element cut throught a column
+			- column-span: all;
+				- Cut through all columns
+		- white-space
+			- used to deal with white space
+			- white-space:nowarp;
+				- making the class stick together when page is sticking
+		- break
+			- used to cleafy how a class should break
+			- break-insdie: avoid;
+				- make sure the class stays together
+			- break-before: column;
+				- make sure the class trys to go before a column break
+				- Will force a column to be made when only one column should exits
 Chapter 12 Notes:
+	- This chapter is abour columns
+	- Margin on the top and bottom will do something called margin colaps where they merge
+		- So when you delete top margin bottom margin will still eixits to split it up
+		- When using columns, top margin should be set to 0 so that there isnt a gap at the start of the paragraph
+	- For using HTML enities/ unicode
+		- https://symbl.cc/en/
+
+
